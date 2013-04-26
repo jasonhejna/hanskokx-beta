@@ -7,9 +7,9 @@ $new->email = 'test@test.com';
 $new->save();
 
 
-$person = ORM::for_table('clients')->where('name', 'Bob')->find_many();
+$people = ORM::for_table('clients')->where('name', 'Bob')->find_many();
 
 echo '<pre>';
-print_r($person->email);
+foreach ($people as $person) { print_r($person->email); }
 echo '</pre>';
 ?>
