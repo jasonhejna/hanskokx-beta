@@ -1,5 +1,5 @@
 <?
-$url = "http://beta.hanskokx.com/";
+$url = "http://beta.hanskokx.com";
 
 // database stuff
 require_once 'idiorm.php';
