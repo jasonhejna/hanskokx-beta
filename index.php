@@ -12,8 +12,13 @@ $people = ORM::for_table('clients')->where('name', 'Bob')->find_many();
 echo '<pre>';
 foreach ($people as $person)
 	{
+		print_r($person->name);
+		echo '<br />';
+
 		print_r($person->email);
 		echo '<br />';
+		echo '<br />';
+
 	}
 echo '</pre>';
 ?>
