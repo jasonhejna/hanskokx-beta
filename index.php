@@ -11,13 +11,15 @@ $new->email = 'test@test.com';
 
 
 echo '====== Grab "Jim" ======' ;
+echo '<br />';
 $person = ORM::for_table('clients')->where('name', 'Jim')->find_one();
-echo($person->name);
-echo($person->email);
+print_r($person->name);
+print_r($person->email);
 
 echo '<br /><br />';
 
 echo '====== Grab all the "Bobs" ======';
+echo '<br />';
 $people = ORM::for_table('clients')->where('name', $myname)->find_many();
 foreach ($people as $person)
 	{
