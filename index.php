@@ -8,5 +8,5 @@ $new->save();
 
 
 $person = ORM::for_table('clients')->where('name', 'Bob')->find_one();
-printf $person;
+print_r $person;
 ?>
