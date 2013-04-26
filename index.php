@@ -1,7 +1,7 @@
 <?
 require_once 'config.php';
 
-$new = ORM::for_table('clients')->find_one(5);
+$new = ORM::for_table('clients')->create();
 
 $new->set('name', 'Bob');
 $new->email = 'test@test.com';
