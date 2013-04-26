@@ -9,9 +9,16 @@ $new->email = 'test@test.com';
 //$new->save();
 
 
-$people = ORM::for_table('clients')->where('name', $myname)->find_many();
 
-echo '<pre>';
+echo '====== Grab "Jim" ======' ;
+$person = ORM::for_table('clients')->where('name', 'Jim')->find_one();
+echo($person->name);
+echo($person->email);
+
+echo '<br /><br />';
+
+echo '====== Grab all the "Bobs" ======';
+$people = ORM::for_table('clients')->where('name', $myname)->find_many();
 foreach ($people as $person)
 	{
 		print_r($person->name);
@@ -22,5 +29,4 @@ foreach ($people as $person)
 		echo '<br />';
 
 	}
-echo '</pre>';
 ?>
