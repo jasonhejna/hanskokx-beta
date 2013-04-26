@@ -10,6 +10,6 @@ $new->save();
 $person = ORM::for_table('clients')->where('name', 'Bob')->find_many();
 
 echo '<pre>';
-print_r($person->name);
+print_r($person);
 echo '</pre>';
 ?>
