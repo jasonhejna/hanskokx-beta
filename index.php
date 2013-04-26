@@ -1,5 +1,6 @@
 <?
 require_once 'config.php';
+header('Location: $url/mobile');
 
 echo '$url/mobile';
 
