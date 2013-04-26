@@ -1,13 +1,15 @@
 <?
+$myname = 'Bob';
+
 require_once 'config.php';
 
 $new = ORM::for_table('clients')->create();
 $new->set('name', 'Bob');
 $new->email = 'test@test.com';
-$new->save();
+//$new->save();
 
 
-$people = ORM::for_table('clients')->where('name', 'Bob')->find_many();
+$people = ORM::for_table('clients')->where('name', $myname)->find_many();
 
 echo '<pre>';
 foreach ($people as $person)
