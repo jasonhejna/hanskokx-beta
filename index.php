@@ -10,6 +10,10 @@ $new->save();
 $people = ORM::for_table('clients')->where('name', 'Bob')->find_many();
 
 echo '<pre>';
-foreach ($people as $person) { print_r($person->email); }
+foreach ($people as $person)
+	{
+		print_r($person->email);
+		echo '<br />';
+	}
 echo '</pre>';
 ?>
