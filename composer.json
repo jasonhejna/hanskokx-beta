@@ -1,6 +1,6 @@
 {
-    "require": {
-        "j4mie/idiorm": "*",
-        "j4mie/paris": "*"
-    }
+	"require": {
+		"j4mie/idiorm": "*",
+		"j4mie/paris": "*"
+	}
 }
