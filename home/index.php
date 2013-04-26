@@ -159,6 +159,9 @@ else {
 				case "sessions":
 					include_once('sessions.php');
 					break;	
+				case "prints":
+					include_once('prints.php');
+					break;	
 				case "booked":
 					include_once('schedule_event_confirmation.php');
 					break;

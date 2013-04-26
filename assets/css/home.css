@@ -1,7 +1,3 @@
-.blocky {
-	display: block;
-}
-
 .header {
 	font-family: 'CallunaRegular', sans-serif;
 	position: fixed;
@@ -10,10 +6,10 @@
 	margin: 0 auto;
 	width: 100%;
 	height: 35px;
-	background: #9da6bb;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(230, 232, 237, 1)), to(rgba(156, 166, 189, 1)));
-	background: -moz-linear-gradient(rgba(230, 232, 237, 1), rgba(156, 166, 189, 1));
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e6e8ed, endColorstr=#9ca6bd);
+    background: #9da6bb;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(230, 232, 237, 1)), to(rgba(156, 166, 189, 1)));
+    background: -moz-linear-gradient(rgba(230, 232, 237, 1), rgba(156, 166, 189, 1));
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e6e8ed, endColorstr=#9ca6bd);
 	-moz-box-shadow:0 5px 5px rgba(182, 182, 182, 0.75);
 	-webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
 	box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
@@ -42,17 +38,17 @@
 }
 
 #profile_dropdown_button {
-	z-index: 11;
 	display: block;
 	float: right;
 	width: 55px;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(156, 166, 189, 1)), to(rgba(230, 232, 237, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(156, 166, 189, 1)), to(rgba(230, 232, 237, 1)));
 	background-image:url('/assets/images/profile.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-right: 10px;
 	margin-top: -26px;
 	height: 100%;
+	z-index: 3;
 }
 
 #profile_dropdown_button:hover {
@@ -70,17 +66,16 @@
 }
 
 #profile_dropdown {
-	z-index: 12;
-	position: relative;
 	display: block;
 	float: right;
 	width: 250px;
-	margin-top: 15px;
-	margin-right: -55px;
+	margin-top: 42px;
+	z-index: 3;
 	background-color: white;
 	-moz-box-shadow: 0 0 5px #888;
 	-webkit-box-shadow: 0 0 5px#888;
 	box-shadow: 0 0 5px #888;
+	display: none;
 	cursor: default;
 	border-radius: 4px 4px 4px 4px;
 }
@@ -93,16 +88,6 @@
 	line-height: 18px;
 	text-indent: 15px;
 	cursor: pointer;
-}
-
-#profile_name {
-	text-overflow: ellipsis;
-	width: 190px;
-	position: absolute;
-	left: 55px;
-	text-indent: 0;
-	white-space: nowrap;
-	overflow: hidden;
 }
 
 .profile_dropdown_item:hover, .profile_dropdown_item:hover div {
@@ -118,21 +103,13 @@
 #menu_profile_icon {
 	position: relative;
 	display: inline-block;
-	max-width: 36px;
-	max-height: 36px;
-	height: 36px;
 	width: 36px;
+	height: 36px;
 	background-size: 36px 36px;
     background-image:url('/assets/images/default_profile.png');
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
-/* unused, but for future menu_profile_icon */
-#multi-bg {
-	background: url(images/bg-image-1.gif) center center no-repeat, url(images/bg-image-2.gif) top left repeat;
-}
-
 
 #menu_logout {
 	margin-bottom: 4px;

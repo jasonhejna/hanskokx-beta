@@ -27,7 +27,8 @@
                         for($i=sizeof($narray)-1; $i>-1; $i--)
                         {
                             $title = preg_replace('/\.[^.]+$/','',$narray[$i]);
-                            echo    '<li style="max-width: 1000px; max-height: 1000px;"><img src="'.$dir.$narray[$i].'" width="496" height="620" alt="" /></li>';
+                            //echo    '<li style="max-width: 1000px; max-height: 1000px;"><img src="'.$dir.$narray[$i].'" width="496" height="620" alt="" /></li>';
+                            echo    '<li style="max-width: 1000px; max-height: 1000px;"><img src="'.$dir.$narray[$i].'" width="750" height="500" alt="" /></li>';
                         }
                     }
                     closedir($dh);

@@ -1,5 +1,5 @@
-<div style="top: 20%; width: 700px; margin-left: auto; margin-right: auto;">
-<div style="display: inline-block; text-align: center;">
+<div style="top: 20%; width: 100%; margin-left: auto; margin-right: auto; text-align: center;">
+<div style="display: inline-block; height: 100%; margin: 0px auto; text-align: center;">
 	<a href="?q=account" class="nav_button<?php if ( $_GET['q'] == "account" ) { echo "_now"; }; ?>">
 		<span style="text-align: center; position: relative; width: 100%; top: 30%;">
 			Manage my<br /><span style="font-weight: bold; font-size: 18pt;">account</span>
@@ -34,5 +34,12 @@ if($unviewed >= "1") {
                         Manage my<br /><span style="font-weight: bold; font-size: 18pt;  <? if($unviewed >= "1") { echo 'margin-left: 42px;';} ?>">proofs</span>
 		</span>
 	</a>
+
+        <a href="?q=prints" class="nav_button<?php if ( $_GET['q'] == "prints" ) { echo "_now"; }; ?>">
+                <span style="text-align: center; position: relative; width: 100%; top: 30%;">
+                        Manage my<br /><span style="font-weight: bold; font-size: 18pt;">prints</span>
+                </span>
+        </a>
+
 </div>
 </div>

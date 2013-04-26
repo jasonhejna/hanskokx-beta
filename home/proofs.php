@@ -2,7 +2,7 @@
 session_start(); 
 
 $db = new SQLiteDatabase("../db/clients.db");
-$result = $db->query("SELECT Date,event_id,unviewed FROM Events WHERE events_email='$email' AND published='1'");
+$result = $db->query("SELECT Date,event_id,unviewed FROM Events WHERE events_email='$email' AND published='1' AND processed!='1'");
 $results =  sizeof($result);
 ?>
 <script>
@@ -115,19 +115,22 @@ $results =  sizeof($result);
 										<li class="thumbnails">
 											<a href="'.$originals.'/'.$narray[$i].'"  rel="lightbox[event]"><img src="'.$dir.$narray[$i].chr(34).'" /></a>
 										</li>
-										<br />
-										<span class="checkbox">
-											<input type="checkbox" id="'.$narray[$i].'" class="check" name="'.$narray[$i].'" /><label for="'.$narray[$i].'">Select</label>
-										</span>
-									</div>';
+										<br />';
+											if (!$row[processed] == "broken") {
+												echo '<span class="checkbox">
+														<input type="checkbox" id="'.$narray[$i].'" class="check" name="'.$narray[$i].'" /><label for="'.$narray[$i].'">Select</label>
+													</span>';
+											}
+							echo	'</div>';
 							$img_count++;
 						}
 			        }
 			        closedir($dh);
-				echo '<p class="submit"><input type="submit" class="big_button" style="margin-bottom: 30px; width: 95%; margin-left: auto; margin-right: auto;" value="Submit photos for processing" /></p>';
-			    };
+				if (!$row[processed] == "broken") {
+						echo '<p class="submit"><input type="submit" class="big_button" style="margin-bottom: 30px; width: 95%; margin-left: auto; margin-right: auto;" value="Submit photos for processing" /></p>';
+			    	}
+				};
 			?>
-
 				</ul>
 			</fieldset>
 		</form>

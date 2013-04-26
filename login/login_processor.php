@@ -26,10 +26,10 @@ if(sqlite_num_rows($result)!="1")
 	header('Location: /login');
 	exit;
 }
+else
 {
 	$result = sqlite_query($dbhandle, $get_data);
 	$row = sqlite_fetch_array($result, SQLITE_NUM);
-	$_SESSION['name'] = $row[2];
 	$_SESSION['email'] = $email;
 	$_SESSION['is_logged_in'] = "on";
 	$_SESSION['is_admin'] = $row['is_admin'];

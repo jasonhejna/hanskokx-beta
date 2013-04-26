@@ -4,7 +4,6 @@
 	session_start();
 ?>
 <!DOCTYPE html>
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
 <!-- 
@@ -53,18 +52,13 @@
 
 -->
 <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-      <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
 <!-- Javascript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="/assets/js/jquery.validate.pack.js" type="text/javascript"></script>
-	<script src="/assets/js/html5.js" type="text/javascript"></script>
-	<script src="/assets/js/jquery.notifyBar.js" type="text/javascript"></script>
-	<script src="/assets/js/motionpack.js" type="text/javascript"></script>
-	<script src="/assets/js/modernizr-1.6.min.js" type="text/javascript"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="/assets/js/jquery.validate.pack.js" type="text/javascript"></script>
+        <script src="/assets/js/html5.js" type="text/javascript"></script>
+        <script src="/assets/js/jquery.notifyBar.js" type="text/javascript"></script>
+        <script src="/assets/js/motionpack.js" type="text/javascript"></script>
+        <script src="/assets/js/modernizr-1.6.min.js" type="text/javascript"></script>
 <!-- Stylesheets -->
 	<link rel="stylesheet" href="/assets/css/styles.css" media="all" type="text/css" />
 	<link rel="stylesheet" href="/assets/css/login.css" media="all" type="text/css" />
