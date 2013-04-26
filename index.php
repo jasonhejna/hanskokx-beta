@@ -14,6 +14,7 @@ echo '====== Grab "Jim" ======' ;
 echo '<br />';
 $person = ORM::for_table('clients')->where('name', 'Jim')->find_one();
 print_r($person->name);
+echo '<br />';
 print_r($person->email);
 
 echo '<br /><br />';
