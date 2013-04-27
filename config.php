@@ -44,8 +44,8 @@ function curPageName() {
 
 ####### Define default header #######
 function head() {
-	return $doctype;
-	return $favicon;
+	return global $doctype;
+	return global $favicon;
 	return (include 'header.php');
 }
 
