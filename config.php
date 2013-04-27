@@ -11,12 +11,6 @@ $url = "http://beta.hanskokx.com";
 # If $is_logged_in isn't defined, we should set it to a null value
 if (!isset($_SESSION['is_logged_in'])) { $_SESSION['is_logged_in'] = ''; }
 
-# Doctype
-$doctype = '<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>';
-
-# Favicon
-$favicon = '<link rel="icon" type="image/png" href="/assets/images/favicon.png">';
-
 # Page title
 $title = 'Photography by Hans Kokx | Ann Arbor and Southeast Michigan Photographer';
 
@@ -43,9 +37,14 @@ function curPageName() {
 
 
 ####### Define default header #######
-function head($doctype,$favicon) {
-	return $doctype;
-	return $favicon;
+function head() {
+	# Doctype
+	$doctype = '<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>';
+
+	# Favicon
+	$favicon = '<link rel="icon" type="image/png" href="/assets/images/favicon.png">';
+
+	return $doctype, $favicon;
 	return (include 'header.php');
 }
 
