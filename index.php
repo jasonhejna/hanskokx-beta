@@ -69,5 +69,5 @@ echo $doctype;
 		<div class="title user-select-none cursor_default">Candid portraits of real moments.</div>
 	</div>
 <!-- End services -->
-</body>
-</html>
+
+<?php include("/footer.php"); ?>
