@@ -7,7 +7,7 @@ include 'config.php';
 ?>
 
 <?
-curPageName();
+echo curPageName();
 ?>
 
 <!-- Begin services -->
