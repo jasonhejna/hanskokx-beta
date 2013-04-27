@@ -43,7 +43,7 @@ function curPageName() {
 
 
 ####### Define default header #######
-function header() {
+function head() {
 	return (include 'header.php');
 }
 
