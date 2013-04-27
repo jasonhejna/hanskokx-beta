@@ -30,11 +30,13 @@
 		</div>
 	</footer>
 </div>
+<!--
 <? // Woopra Code Start ?>
 	<script type="text/javascript" src="//static.woopra.com/js/woopra.v2.js"></script>
 	<script type="text/javascript">
 	woopraTracker.track();
 	</script>
 <? // Woopra Code End ?>
+-->
 	</body>
 </html>
