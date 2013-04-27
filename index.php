@@ -3,7 +3,7 @@
 session_start();
 
 # Global configuration
-include $url.'/config.php';
+include 'config.php';
 
 echo $doctype;
 ?>
@@ -70,4 +70,4 @@ echo $doctype;
 	</div>
 <!-- End services -->
 
-<?php include($url.'/footer.php'); ?>
+<?php include('footer.php'); ?>
