@@ -3,7 +3,7 @@
 ob_start("ob_gzhandler");
 
 # Set of the session
-session_start();
+if(!isset($_SESSION)) { session_start(); }
 
 ####### Site variables #######
 $url = "http://beta.hanskokx.com";
