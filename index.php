@@ -51,12 +51,6 @@ echo $doctype;
 
 <body class="body no-js">
 
-<!-- Begin services -->
-	<div id="services" class="tagline">
-		<div class="title user-select-none cursor_default">Candid portraits of real moments.</div>
-	</div>
-<!-- End services -->
-
 <?php include "login_box.php" ?>
 <!-- Begin header -->
 	<header>
@@ -70,6 +64,10 @@ echo $doctype;
 		</div>
 	</header>
 <!-- End header -->
-
+<!-- Begin services -->
+	<div id="services" class="tagline">
+		<div class="title user-select-none cursor_default">Candid portraits of real moments.</div>
+	</div>
+<!-- End services -->
 </body>
 </html>
