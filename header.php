@@ -1,8 +1,3 @@
-<?
-echo $doctype;
-echo $favicon;
-?>
-
 <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="/assets/js/jquery.validate.pack.js" type="text/javascript"></script>
