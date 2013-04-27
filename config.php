@@ -44,8 +44,8 @@ function head() {
 	# Favicon
 	$favicon = '<link rel="icon" type="image/png" href="/assets/images/favicon.png">';
 
-	return $doctype;
-	return $favicon;
+	return echo $doctype;
+	return echo $favicon;
 	return (include 'header.php');
 }
 
