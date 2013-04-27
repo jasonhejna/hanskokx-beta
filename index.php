@@ -57,5 +57,19 @@ echo $doctype;
 	</div>
 <!-- End services -->
 
+<?php include "login_box.php" ?>
+<!-- Begin header -->
+	<header>
+		<div id="title_container_big" class="title_container_big">
+			<div id="logo" class="logo" onclick="location.href='/';" style="cursor:pointer;"></div>
+			<div class="welcome_text user-select-none cursor_default">
+				<div class="name">HANS KOKX</div>
+				<div class="title">photography</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</header>
+<!-- End header -->
+
 </body>
 </html>
