@@ -1,7 +1,4 @@
 <?
-# Set up the session
-session_start();
-
 # Global configuration
 include 'config.php';
 
