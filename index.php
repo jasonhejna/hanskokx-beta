@@ -16,6 +16,3 @@ curPageName();
 	</div>
 <!-- End services -->
 
-<?
-include("footer.php");
-?>
