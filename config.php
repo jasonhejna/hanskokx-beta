@@ -41,4 +41,10 @@ function curPageName() {
  return substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
 }
 
+
+####### Define default header #######
+function header() {
+	include 'header.php';
+}
+
 ?>
