@@ -9,7 +9,7 @@ session_start();
 $url = "http://beta.hanskokx.com";
 
 # If $is_logged_in isn't defined, we should set it to a null value
-if (!isset($_SESSION['is_logged_in'])) { $is_logged_in = ''; }
+if (!isset($_SESSION['is_logged_in'])) { $_SESSION['is_logged_in'] = ''; }
 
 # Doctype
 $doctype = '<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>';
