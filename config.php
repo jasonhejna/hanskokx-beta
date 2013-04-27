@@ -8,6 +8,12 @@ if(!isset($_SESSION)) { session_start(); }
 ####### Site variables #######
 $url = "http://beta.hanskokx.com";
 
+# Doctype
+$doctype = '<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>';
+
+# Favicon
+$favicon = '<link rel="icon" type="image/png" href="/assets/images/favicon.png">';
+
 # If $is_logged_in isn't defined, we should set it to a null value
 if (!isset($_SESSION['is_logged_in'])) { $_SESSION['is_logged_in'] = ''; }
 
@@ -38,14 +44,6 @@ function curPageName() {
 
 ####### Define default header #######
 function head() {
-	# Doctype
-	$doctype = '<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>';
-
-	# Favicon
-	$favicon = '<link rel="icon" type="image/png" href="/assets/images/favicon.png">';
-
-	return echo $doctype;
-	return echo $favicon;
 	return (include 'header.php');
 }
 

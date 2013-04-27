@@ -5,6 +5,8 @@ session_start();
 # Global configuration
 include 'config.php';
 
+echo $doctype;
+echo $favicon;
 head();
 ?>
 
