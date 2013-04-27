@@ -2,8 +2,14 @@
 # Set up Gzip compression handling
 ob_start("ob_gzhandler");
 
+# Set of the session
+session_start();
+
 ####### Site variables #######
 $url = "http://beta.hanskokx.com";
+
+# If $is_logged_in isn't defined, we should set it to a null value
+if (!isset($is_logged_in) { $is_logged_in = ''; }
 
 # Doctype
 $doctype = '<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>';
