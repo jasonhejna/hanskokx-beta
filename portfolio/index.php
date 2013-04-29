@@ -1,6 +1,6 @@
 <?
 # Global configuration
-include 'config.php';
+include '/config.php';
 
 echo $doctype;
 echo $favicon;
