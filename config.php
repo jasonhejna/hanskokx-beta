@@ -44,7 +44,7 @@ function curPageName() {
 
 ####### Define default header #######
 function head($title) {
-	return (include 'header.php');
+	return (require_once $url.'/header.php');
 }
 
 ?>
