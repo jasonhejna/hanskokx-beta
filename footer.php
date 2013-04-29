@@ -1,3 +1,4 @@
+<? echo $_SERVER['REQUEST_URI']; ?>
 		<div class="push"></div>
 <? // Begin navigation ?>
 <div id="footer-holder">&nbsp;</div>

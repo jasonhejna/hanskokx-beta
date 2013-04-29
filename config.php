@@ -38,7 +38,7 @@ ORM::configure(array(
 ####### Functions #######
 # Get current page's filename or path, and store it as curPageName()
 function curPageName() {
- return substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
+	return substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
 }
 
 
