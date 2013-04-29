@@ -1,4 +1,11 @@
-<?php include("../header.php"); ?>
+<?
+# Global configuration
+include 'config.php';
+
+echo $doctype;
+echo $favicon;
+head();
+?>
 <script src="../assets/js/slideshow.js"></script>
 <div id="slideshow">
 
