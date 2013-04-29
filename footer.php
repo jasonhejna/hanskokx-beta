@@ -1,4 +1,4 @@
-<? echo $_SERVER['REQUEST_URI']; ?>
+<?php if (strstr($_SERVER['REQUEST_URI'], "portfolio")) { echo "_now"; }; ?>
 		<div class="push"></div>
 <? // Begin navigation ?>
 <div id="footer-holder">&nbsp;</div>
