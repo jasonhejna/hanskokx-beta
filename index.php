@@ -47,6 +47,7 @@
 			                                }
 			                                else if($file != '.' && $file != '..')
 			                                {
+			                                		echo $file;
 			                                        $narray[$i]=$file;
 			                                        $i++;
 			                                }
