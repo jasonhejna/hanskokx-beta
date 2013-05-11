@@ -31,6 +31,7 @@ body {
 	cursor: default;
 }
 
+
 #body-wrapper {
 	height: 100%;
 	min-height: 100%;
@@ -43,32 +44,66 @@ header {
 	top: 0;
 	left: 0;
 	background: url(/images/dark.png);
-
+	overflow: hidden;
 }
 
+.button {
+	background: url(/images/gradient.png);
+	background-color: #444439;
+}
 
-/* Header text */
+/* Header  */
+#header_text {
+	height: 100%;
+	min-height: 100%;
+	margin-right: 100px;
+}
+
+.logo_mini {
+	background: url(/images/logo_mini.png) no-repeat;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+	height: 36px;
+	width: 36px;
+	margin-left: 15px;
+	margin-top: 7px;
+	display: inline-block;
+}
+
 .name {
 	color: #0099ff;
 	text-align: center;
 	text-shadow:#000 0 1px 0;
 	font-size: 18pt;
 	font-family: 'CallunaRegular', sans-serif;
-	width: 200px;
-	display: inline;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	bottom: 10px;
 	margin-left: 15px;
 }
 
 .title {
-	color: #999999;
+	color: #aaa;
 	text-align: center;
 	text-shadow:#000 0 1px 0;
 	font-size: 30pt;
 	font-family: 'CallunaRegular', sans-serif;
-	width: 200px;
-	display: inline;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	bottom: 10px;
 }
-/* end header text */
+
+#login_button {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+/* end header */
 
 #background-container {
 	margin-top: 50px;
@@ -87,7 +122,8 @@ header {
 	margin: 0 auto;
 	height: 100%;
 	width: 100%;
-	background: url(/images/bg.png) no-repeat center center fixed; 
+	/* background: url(/images/bg.png) no-repeat center center fixed;  */
+	background: url(/images/bg.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
