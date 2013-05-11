@@ -20,7 +20,7 @@ $(window).load(function(){
 		window.console && window.console.time && console.time('Generated In');
 		
 		if(supportCanvas){
-			$('#slideshow li').each(function(){
+			$('#slideshow img').each(function(){
 
 				if(!slideshow.width){
 					// Taking the dimensions of the first image:
