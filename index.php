@@ -30,7 +30,7 @@
 			<!-- End Background -->
 
  			<div id="slideshow">
-
+<? echo "test"; ?>
 			        <?
 			            $dir = "/images/slideshow/";
 			            $narray=array();
@@ -51,7 +51,7 @@
 			                                }
 			                                else if($file != '.' && $file != '..')
 			                                {
-			                           
+
 			                                		echo $file;
 			                                        $narray[$i]=$file;
 			                                        $i++;
