@@ -38,15 +38,20 @@
 			            $i=0;
 			            echo '<ul class="slides">';
 			            if (is_dir($dir)) {
+			            	echo "dir good";
 			                if ($dh = opendir($dir)) {
+			                	echo " open dir good ";
 			                    while($file = readdir($dh))
 			                        {
+			                        	echo " read dir good ";
 			                                if(is_dir($file))
 			                                {
+			                                	echo " is dir file good ";
 			                                        continue;
 			                                }
 			                                else if($file != '.' && $file != '..')
 			                                {
+			                           
 			                                		echo $file;
 			                                        $narray[$i]=$file;
 			                                        $i++;
