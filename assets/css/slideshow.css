@@ -14,12 +14,6 @@
 	margin: 0 auto;
 	height: 100%;
 	width: 100%;
-	/* background: url(/images/bg.png) no-repeat center center fixed;  */
-	background: url(/images/bg.png) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 
 #slideshow ul{
@@ -31,6 +25,10 @@
 }
 
 #slideshow li{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	position:absolute;
 	display:none;
 	z-index:10;

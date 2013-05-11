@@ -55,7 +55,7 @@
 			                        for($i=sizeof($narray)-1; $i>-1; $i--)
 			                        {
 			                            $title = preg_replace('/\.[^.]+$/','',$narray[$i]);
-			                            echo    '<li style="max-width: 100%; max-height: 100%;"><img src="'.$dir.$narray[$i].'" width="100%" height="100%" alt="'.$narray[$i].'" /></li>';
+			                            echo    '<li style="background: url('.$dir.$narray[$i].') no-repeat center center fixed;"</li>';
 			                        }
 			                    }
 			                    closedir($dh);
