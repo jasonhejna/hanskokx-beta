@@ -30,9 +30,8 @@
 			<!-- End Background -->
 
  			<div id="slideshow">
-<? echo "test"; ?>
-			        <?
-			            $dir = "/images/slideshow/";
+ 			        <?
+			            $dir = "images/slideshow/";
 			            $narray=array();
 			            $dh = @opendir($dir);
 			            $i=0;
