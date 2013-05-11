@@ -11,13 +11,11 @@
 }
 
 #slideshow ul{
-	height: 500px;
-	left:10px;
+	height: 100%;
+	width: 100%;
 	list-style:none outside none;
 	overflow:hidden;
 	position:absolute;
-	top:10px;
-	width: 750px;
 }
 
 #slideshow li{
