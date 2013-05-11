@@ -1,14 +1,11 @@
 #slideshow{
-	background-color:#F5F5F5;
-	border:1px solid #FFFFFF;
-	height: 520px;
-	margin: 50px auto 0;
-	position:relative;
-	width: 770px;
-	-moz-box-shadow:0 0 22px #111;
-	-webkit-box-shadow:0 0 22px #111;
-	box-shadow:0 0 22px #111;
-	margin-top: 125px;
+	margin-top: 50px;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	height: calc(100% - 100px); /* IE9+ and future browsers */
+	height: -moz-calc(100% - 100px); /* Firefox */
+	height: -webkit-calc(100% - 100px); /* Chrome, Safari */
 }
 
 #slideshow ul{
