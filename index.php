@@ -26,7 +26,7 @@
 		<div id="background-container">
 			<!-- Background -->
 			<div class="clearpx"></div>
-			<div id="background-photo"></div>
+			<!-- <div id="background-photo"></div> -->
 			<!-- End Background -->
 
  			<div id="slideshow">
