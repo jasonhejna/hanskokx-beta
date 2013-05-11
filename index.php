@@ -29,7 +29,7 @@
 			<div id="background-photo"></div>
 			<!-- End Background -->
 
-<!-- 			<div id="slideshow">
+ 			<div id="slideshow">
 
 			        <?
 			            $dir = "/images/slideshow/";
@@ -66,7 +66,7 @@
 
 			    <span class="arrow previous"></span>
 			    <span class="arrow next"></span>
-			</div> -->
+			</div>
 
 
 		</div>
